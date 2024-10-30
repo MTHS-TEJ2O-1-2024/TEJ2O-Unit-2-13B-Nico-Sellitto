@@ -28,8 +28,9 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
-            basic.showNumber(count)
             neopixelStrip.show()
+            basic.showNumber(count)
+
         }
 
         if (count = 3) {
@@ -37,6 +38,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            neopixelStrip.show()
             basic.showNumber(count)
         }
 
@@ -45,6 +47,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            neopixelStrip.show()
             basic.showNumber(count)
         }
 
@@ -53,6 +56,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            neopixelStrip.show()
             basic.showNumber(count)
         }
 
@@ -61,10 +65,9 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+            neopixelStrip.show()
             basic.showNumber(0)
         }
-        neopixelStrip.show()
-        basic.pause(500)
         count = count - 1
     }
 
