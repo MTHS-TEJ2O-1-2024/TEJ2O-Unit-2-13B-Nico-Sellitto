@@ -22,13 +22,14 @@ input.onButtonPressed(Button.A, function() {
     count = 4
     while (count > 0) {
         basic.pause(500)
-        
+
         if (count = 4) {
             neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
-            basic.showNumber(4)
+            basic.showNumber(count)
+            neopixelStrip.show()
         }
 
         if (count = 3) {
@@ -36,7 +37,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            basic.showNumber(3)
+            basic.showNumber(count)
         }
 
         if (count = 2) {
@@ -44,7 +45,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            basic.showNumber(2)
+            basic.showNumber(count)
         }
 
         if (count = 1) {
@@ -52,7 +53,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            basic.showNumber(1)
+            basic.showNumber(count)
         }
 
         if (count = -1) {
