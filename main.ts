@@ -28,8 +28,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
-            neopixelStrip.show()
-            basic.pause(500)
+            basic.showNumber(4)
         }
 
         if (count = 3) {
@@ -37,8 +36,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixelStrip.show()
-            basic.pause(500)
+            basic.showNumber(3)
         }
 
         if (count = 2) {
@@ -46,8 +44,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixelStrip.show()
-            basic.pause(500)
+            basic.showNumber(2)
         }
 
         if (count = 1) {
@@ -55,8 +52,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixelStrip.show()
-            basic.pause(500)
+            basic.showNumber(1)
         }
 
         if (count = -1) {
@@ -64,14 +60,13 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-            neopixelStrip.show()
-            basic.pause(500)
+            basic.showNumber(0)
         }
         neopixelStrip.show()
+        basic.pause(500)
         count = count - 1
     }
 
     basic.showIcon(IconNames.Happy)
     
 })
-
